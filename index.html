@@ -5,24 +5,19 @@
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
-    <link rel="stylesheet" href="/style.css">
-    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
-    <div class="box">
-        <h2>Random Password Generator</h2>
-        <input type="text" 
-        placeholder="Create Password" 
-        id="password" readonly>
+    <div class="container">
+            <h2>Random Password Generator</h2> 
+            <input type="text" placeholder="Create Password" id="password" readonly>
 
-        <table>
-            <th><div id="button" class="btn1" 
-                onclick="genPassword()">Generate</div></th>
-
-                <th><div id="button" class="btn2" 
-                    onclick="copyPassword()">Copy</div></th>
-        </table>
+            <div class="button">
+                <button class="btn-1" type="button" onclick="genPassword()">Generate</button>
+                <button class="btn-2" type="button" onclick="copyPassword()">Copy</button>
+            </div>
     </div>
 </body>
 
